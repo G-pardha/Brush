@@ -1,0 +1,341 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color:#000000;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .profile .bi{
+    position: absolute;
+    height: 70px;
+    width: 100px;
+    left:102%;
+    top:-7px;
+    transition: transform 0.2s ease-in,box-shadow  0.2s ease-in;
+  }
+
+  .bi:hover {
+    padding: 0; /* Remove padding on hover */
+    margin: 0; /* Remove margin on hover */
+    border-radius: 50%; /* Make it circular */
+    height: 100px; /* Increase height on hover */
+    width: 100px; /* Increase width to match height and maintain aspect ratio */
+    transform: scale(1.0); /* Slightly scale up */
+    box-shadow: 0 0 80px 10px #004bd8; /* Add shadow effect */
+  }
+  #container {
+    position:relative;
+    width:80%;
+    margin:5% auto;
+    background-color:black;
+    box-shadow: -2px -2px 5px white,2px -2px 5px white;
+  }
+  #container > nav {
+    width:100%;
+    display:flex;
+    max-height:60px;
+  }
+  #logo {
+    line-height:60px;
+    font-size:30px;
+    padding: 0 50px;
+    color: white;
+    width:40%;
+    letter-spacing:2px;
+    text-shadow:2px 2px 5px;
+  }
+  #container > nav > ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    display:flex;
+    position:absolute;
+      right:50px;
+  /*   min-width:60%; */
+  }
+  #container > nav > ul > li {
+    line-height:60px;
+    margin: 0 0px;
+    padding:0;
+    text-align:center;
+    display:inline-block;
+    
+  /*   background-color:green; */
+    min-width:120px;
+  
+  } 
+  #container > nav > ul > li > a {
+    position:relative;
+  /*   background-color:red; */
+    margin: 0 20px;
+      color:white;
+  }
+  #container > nav > ul > li:hover {
+    border-bottom: 2px solid white;
+    background-color: #0088ff;
+  }
+  #container > nav > ul > .dropdown:hover {
+    border-bottom:none;
+  }
+  #container > nav > ul > .dropdown:hover >  .dd
+  {
+    display:block;
+  }
+  .dropdown:hover > a .fa-caret-down {
+    display:none;
+  }
+  a {
+    text-decoration:none;
+  
+  }
+  
+  #container > nav > ul > li > div {
+    position:absolute;
+    padding: 0 10px;
+    
+    background-color:black;
+    display:none;
+    background-color:aliceblue;
+    min-width:100px;
+  }
+  
+  #container > nav > ul > li > div > ul {
+    margin:0px 0 10px 0;
+    padding:0;
+    list-style:none;
+  }
+  #u_a_c {
+    position:relative;
+    width:100%;
+  /*   background-color:red; */
+  }
+  #up_arrow {
+    position:relative;
+    width:20px;
+    height:20px;
+    left:42%;
+    top:-10px;
+    background-color:aliceblue;
+    transform:rotate(45deg);
+  }
+  #container > nav > ul > li> div > ul > li:hover {
+    background-color:rgba(0,0,0,0.2);
+  }
+  #container > nav > ul > li > div > ul > li > a {
+    padding : 5px;
+      color:black;
+  }
+
+#help-btn {
+    background-color: #004bd8;
+    border-radius: 50%;
+    display: inline-block; 
+    font-size: 24px;
+    height: 56px;
+    width: 56px;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+#help-btn:hover {
+    background-color: #004bd8;
+    border-radius: 50px;
+    transform: scale(1.1); 
+    box-shadow: 0 0  80px 10px #004bd8
+}
+
+
+#main-img{
+    height: 700px;
+    width:1427px;
+}
+
+.btn{
+    position: relative;
+    bottom:250px;
+    left: 90px;
+    color: #ffffff;
+    font-size: large;
+    border-radius: 30px;
+
+}
+#btn:hover{
+    background-color: #004bd8;
+    border-radius: 50px;
+    box-shadow: 0 0  80px 10px #004bd8;
+} 
+
+#p1{
+    font-size: 20px;
+    color: aliceblue;
+    position: absolute;
+    bottom: 50px;
+    left:20px;
+}
+
+h1{
+    font-size: 50px;
+    color: grey;
+    padding-left:40px;
+    margin-top: 10px;
+}
+
+#img1{
+    float: left;
+    height: 20%;
+    width: 50%;
+    display: block;
+    margin-left: 30px;
+}
+.text-box2{
+    margin-top: 300px;
+    padding-left: 800px;
+    color: grey;
+}
+.text-box2 h2{
+    font-size: 40px;
+}
+.d-grid1{
+    margin-top:45%;
+    border-radius: 20px;
+    width: 500px;
+    color: #000000;
+    border-radius: 30%;
+   
+}
+
+#img2{
+    float: right;
+    height: 20%;
+    width: 50%;
+    display: block;
+    margin-left: 30px;
+}
+.text-box3{
+    margin-top: 350px;
+    padding-left: 30px;
+    color: grey;
+}
+.text-box3 h2{
+    font-size: 40px;
+}
+.d-grid2{
+    margin-top:20%;
+    margin-right:65%;
+    border-radius: 20px;
+    width: 500px;
+    color: #000000;
+    border-radius: 30%;
+   
+}
+
+#img3{
+    float: left;
+    height: 20%;
+    width: 50%;
+    display: block;
+    margin-left: 30px;
+}
+.text-box4{
+    margin-top: 150px;
+    padding-left: 800px;
+    color: grey;
+}
+.text-box4 h2{
+    font-size: 40px;
+}
+
+.d-grid3{
+    margin-top:20%;
+    margin-left:35%;
+    border-radius: 20px;
+    width: 500px;
+    color: #000000;
+    border-radius: 30%;
+   
+}
+
+.quote{
+    text-align: center;
+    background-color: white;
+    margin-top: 90px;
+}
+.quote h1{
+    color: rgb(62, 59, 59);
+    font-size: 60px;
+    font-weight: bolder;
+}
+.quote p{
+    font-weight: bold;
+}
+.end1 {
+    display: inline-block; /* Change from inline to inline-block */
+    transition: transform 0.3s; /* transition effect */
+    transform: translate(30px);
+}
+
+.end1:hover {
+    transform: scale(1.2); /* zoom in by 20% */
+}
+
+.end2 {
+    display: inline-block; /* Change from inline to inline-block */
+    transition: transform 0.3s; /* transition effect */
+    
+}
+
+.end2:hover {
+  transition-timing-function: ease-in;
+    transform: scale(1.2); /* zoom in by 20% */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+.leftfoot {
+    flex: 1; /* Allows the left section to take up available space */
+    padding-bottom: 90px;
+    
+}
+
+.rightfooter {
+    flex: 1; /* Allows the right section to take up more space if needed */
+    display: flex;
+    justify-content: space-between; /* Distribute space between the right footer items */
+    
+}
+
+.leftfoot h1 {
+    text-align: left;
+    font-size: 40px;
+    
+}
+
+.rightfoot > div {
+    flex: 1;
+    list-style-type: none;
+    
+    margin-right: 60px;
+}
+
+.bullets {
+    list-style-type: none;
+    padding-left: 0; /* Remove default padding */
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in; /* Smooth transition for scale and shadow */
+}
+
+
+.bullets:hover {
+    transform: scale(1.1); /* Slightly scale up on hover */
+    box-shadow: 0 0 80px 10px rgb(46, 119, 95); /* Add shadow effect on hover */
+}
